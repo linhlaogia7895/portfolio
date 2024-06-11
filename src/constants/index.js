@@ -24,7 +24,13 @@ import {
     threejs,
     storybook,
   } from "../assets";
-  
+import { SlSocialInstagram }  from "react-icons/sl";
+import { SlSocialFacebook } from "react-icons/sl";
+import { SlSocialGoogle } from "react-icons/sl";
+import { SlSocialLinkedin  } from "react-icons/sl";
+import { SlSocialGithub   } from "react-icons/sl";
+import { SlSocialSteam } from "react-icons/sl";
+
   export const navLinks = [
     {
       id: "about",
@@ -171,34 +177,6 @@ import {
     },
     
   ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
   const projects = [
     {
       name: "Story Book",
@@ -269,5 +247,31 @@ import {
       source_code_link: "https://github.com/linhlaogia7895/Endless-Runner",
     },
   ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+ const socialMedia = [
+    {
+      id: "0",
+      title: "Github",
+      iconUrl: SlSocialGithub,
+      url: "https://github.com/linhlaogia7895",
+    },
+    {
+      id: "1",
+      title: "Facebook",
+      iconUrl: SlSocialFacebook,
+      url: "https://www.facebook.com/linhtuan.tr",
+    },
+    {
+      id: "2",
+      title: "Linkedin",
+      iconUrl: SlSocialLinkedin,
+      url: "https://linkedin.com/in/linhtruong78",
+    },
+    {
+      id: "3",
+      title: "Steam",
+      iconUrl: SlSocialSteam,
+      url: "https://steamcommunity.com/id/LinhTr",
+    },
+  ];
+
+  export { services, technologies, experiences, projects, socialMedia };

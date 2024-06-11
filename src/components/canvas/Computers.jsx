@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./littlest_tokyo/scene.gltf");
 
   return (
     <mesh>
@@ -21,9 +21,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -1.5] : [0, -3.25, -2.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.008 : 0.01}
+        position={isMobile ? [0, -1, 0] : [0, -1, 0]}
+        rotation={[-0.01, -2.8, 0]}
       />
     </mesh>
   );
@@ -65,7 +65,7 @@ const ComputersCanvas = () => {
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          minPolarAngle={0.7}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
